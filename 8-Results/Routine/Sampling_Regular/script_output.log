@@ -1,0 +1,1015 @@
+Script MCMC_Sampling_sunode.py started at: Fri Oct 31 05:36:22 UTC 2025
+Auto-assigning NUTS sampler...
+Initializing NUTS using adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b_H_O2, b_STO_O2, k_H, K_S, K_X, Y_A, Y_H_O2, Y_STO_NOX, mu_H, z, sigma_COD, sigma_NH4, sigma_NOx, sigma_TKN, sigma_Alkalinity, sigma_TSS]
+Config and Data loaded
+Priors Defined:
+    k_H:    mean = 8.5, std = 2.8061740130855966
+    K_X:    mean = 1.0, std = 0.25510672846232696
+    k_STO:    mean = 8.7, std = 2.219428537622245
+    eta_NOX:    mean = 0.5655, std = 0.14413530158121474
+    K_O2:    mean = 0.3, std = 0.1020426913849308
+    K_NOX:    mean = 0.35, std = 0.08928735496181445
+    K_S:    mean = 7.0, std = 2.5510672846232696
+    K_STO:    mean = 0.525, std = 0.2423513920392106
+    mu_H:    mean = 2.5, std = 0.765320185386981
+    K_NH4:    mean = 0.01, std = 0.0025510672846232696
+    K_ALK:    mean = 0.1, std = 0.025510672846232697
+    b_H_O2:    mean = 0.25, std = 0.07653201853869811
+    b_H_NOX:    mean = 0.175, std = 0.06377668211558174
+    b_STO_O2:    mean = 0.25, std = 0.06377668211558174
+    b_STO_NOX:    mean = 0.1255, std = 0.03188834105779087
+    mu_A:    mean = 1.125, std = 0.34439408342414146
+    K_A_NH4:    mean = 1.5, std = 0.3826600926934905
+    K_A_O2:    mean = 0.34, std = 0.10714482595417735
+    K_A_ALK:    mean = 0.5, std = 0.12755336423116348
+    b_A_O2:    mean = 0.1555, std = 0.0482151716793798
+    b_A_NOX:    mean = 0.0755, std = 0.019133004634674527
+    f_S_I:    mean = 0.025, std = 0.01275533642311635
+    Y_STO_O2:    mean = 0.8255, std = 0.21046305098141974
+    Y_STO_NOX:    mean = 0.75, std = 0.19133004634674525
+    Y_H_O2:    mean = 0.7324999999999999, std = 0.18699323196288567
+    Y_H_NOX:    mean = 0.64, std = 0.16326830621588925
+    Y_A:    mean = 0.24, std = 0.06122561483095847
+    f_X_I:    mean = 0.2, std = 0.05102134569246539
+    i_N_S_I:    mean = 0.01, std = 0.0025510672846232696
+    i_N_S_S:    mean = 0.03, std = 0.007653201853869809
+    i_N_X_I:    mean = 0.03, std = 0.007653201853869809
+    i_N_X_S:    mean = 0.0355, std = 0.008928735496181445
+    i_N_BM:    mean = 0.0675, std = 0.01709215080697591
+    i_SS_X_I:    mean = 0.749999955, std = 2.8061740130246774e-08
+    i_SS_X_S:    mean = 0.749999955, std = 2.8061740130246774e-08
+    i_SS_BM:    mean = 0.899999955, std = 2.8061740130246774e-08
+    sigma_COD:    mean = 0, std = 1
+    sigma_NH4:    mean = 0, std = 1
+    sigma_NOx:    mean = 0, std = 1
+    sigma_TKN:    mean = 0, std = 1
+    sigma_Alkalinity:    mean = 0, std = 1
+    sigma_TSS:    mean = 0, std = 1
+Parameters to always fix based on NAASI results (Param, value):
+    i_SS_BM:    0.899999955
+    i_SS_X_I:    0.749999955
+    i_SS_X_S:    0.749999955
+    f_S_I:    0.025
+    i_N_S_I:    0.01
+    K_NH4:    0.01
+    i_N_X_I:    0.03
+    i_N_S_S:    0.03
+    K_ALK:    0.1
+    K_STO:    0.525
+    b_STO_NOX:    0.1255
+    b_A_NOX:    0.0755
+    b_H_NOX:    0.175
+    f_X_I:    0.2
+    b_A_O2:    0.1555
+    i_N_X_S:    0.0355
+PCA Parameter Names (Order):
+[0] k_STO
+[1] eta_NOX
+[2] K_O2
+[3] K_NOX
+[4] mu_A
+[5] K_A_NH4
+[6] Y_STO_O2
+[7] Y_H_NOX
+--------------------------------------------------------
+Parameters to be fixed (Param, value):
+--------------------------------------------------------
+    i_SS_BM
+    i_SS_X_I
+    i_SS_X_S
+    f_S_I
+    i_N_S_I
+    K_NH4
+    i_N_X_I
+    i_N_S_S
+    K_ALK
+    K_STO
+    b_STO_NOX
+    b_A_NOX
+    b_H_NOX
+    f_X_I
+    b_A_O2
+    i_N_X_S
+--------------------------------------------------------
+Parameters to be PCA transformed (Param):
+--------------------------------------------------------
+--------------------------------------------------------
+Parameters to be set to zero (Param):
+--------------------------------------------------------
+--------------------------------------------------------
+Parameters to be sampled (Param):
+--------------------------------------------------------
+    k_H
+    K_X
+    k_STO
+    eta_NOX
+    K_O2
+    K_NOX
+    K_S
+    mu_H
+    b_H_O2
+    b_STO_O2
+    mu_A
+    K_A_NH4
+    K_A_O2
+    K_A_ALK
+    Y_STO_O2
+    Y_STO_NOX
+    Y_H_O2
+    Y_H_NOX
+    Y_A
+    i_N_BM
+    sigma_COD
+    sigma_NH4
+    sigma_NOx
+    sigma_TKN
+    sigma_Alkalinity
+    sigma_TSS
+--------------------------------------------------------
+
+Ensure that the parameters to be fixed, PCA, zero, and free are correct before proceeding with the model
+
+Model created successfully.
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES ERROR]  CVode
+  The right-hand side routine failed at the first call.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 1.02129e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 7.01166e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.00572e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.00572e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 3.08184e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 7.05915e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.001423 and h = 6.3791e-17, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 3.36257e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 8.23137e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.001423 and h = 7.05915e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 8.41116e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 8.41116e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 5.73553e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00875347 and h = 5.89424e-19, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.001423 and h = 6.3791e-17, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 1.02129e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 7.01166e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142396 and h = 4.91406e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00441303 and h = 3.11109e-16, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.00572e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.00572e-19 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 1.88065e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 3.08184e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142736 and h = 2.08821e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 8.41116e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 8.41116e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 5.73553e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 4.04215e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.00142283 and h = 1.01054e-20 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00875347 and h = 5.89424e-19, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00441303 and h = 3.11109e-16, the error test failed repeatedly or with |h| = hmin.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+
+[CVODES ERROR]  CVode
+  At t = 0.108583, mxstep steps taken before reaching tout.
+
+
+[CVODEA ERROR]  CVodeB
+  Error occured while integrating backward problem # 0
+
+Sampling 4 chains, 476 divergences ━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 / 8:42:14
+Sampling 4 chains for 1_000 tune and 500 draw iterations (4_000 + 2_000 draws total) took 31334 seconds.
+There were 476 divergences after tuning. Increase `target_accept` or reparameterize.
+The rhat statistic is larger than 1.01 for some parameters. This indicates problems during sampling. See https://arxiv.org/abs/1903.08008 for details
+The effective sample size per chain is smaller than 100 for some parameters.  A higher number is needed for reliable rhat and ess computation. See https://arxiv.org/abs/1903.08008 for details
+Model run successfully.
+Trace saved successfully.
+Script MCMC_Sampling_sunode.py finished at: Fri Oct 31 14:19:46 UTC 2025
+Total running time: 8h:43m:24s
