@@ -1,0 +1,17 @@
+Fixed Parameters,Identifiable Parameters,Non-Identifiable Parameters,Special Case Parameters
+i_SS_BM,b_H_O2,eta_NOX,i_N_BM
+i_SS_X_I,b_STO_O2,K_NOX,K_A_ALK
+i_SS_X_S,k_H,K_O2,K_A_O2
+f_S_I,K_S,k_STO,
+i_N_S_I,K_X,mu_A,
+K_NH4,Y_A,Y_H_NOX,
+i_N_X_I,Y_H_O2,Y_STO_O2,
+i_N_S_S,Y_STO_NOX,K_A_NH4,
+K_ALK,mu_H,,
+K_STO,,,
+b_STO_NOX,,,
+b_A_NOX,,,
+b_H_NOX,,,
+f_X_I,,,
+b_A_O2,,,
+i_N_X_S,,,
